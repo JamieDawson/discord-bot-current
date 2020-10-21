@@ -1,0 +1,22 @@
+[
+  {
+    "apihost": "https://apigcp.nimbella.io",
+    "namespace": "jamierob-hzoysjqazdd",
+    "packageVersions": {},
+    "actionVersions": {
+      "he": {
+        "version": "0.0.3",
+        "digest": "acb6e2430ef2f25ce9cfe9a953a9d0a480d92de6c7c68ecba990a4ede109936c"
+      },
+      "hello": {
+        "version": "0.0.78",
+        "digest": "2af8c71b30abf096be753184a84c78bdb2b9d9d8fae57c96da4b4740c99b3061"
+      },
+      "index": {
+        "version": "0.0.29",
+        "digest": "fb2888b17f742aa7bc620329479232d565e8703d23b4892d604d8df21d4dbdbf"
+      }
+    },
+    "webHashes": {}
+  }
+]
