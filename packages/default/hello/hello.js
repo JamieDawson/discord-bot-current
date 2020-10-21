@@ -4,3 +4,5 @@ function main(args) {
 	console.log(greeting);
 	return {body: greeting};
 }
+
+module.exports.main = main;

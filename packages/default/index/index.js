@@ -2,16 +2,16 @@ require('dotenv').config();
 const axios = require('axios');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const apitoken = process.env.APITOKEN;
 
-function main(params) {
-	let apitoken = params.apitoken;
-
+function main() {
 	return new Promise(function (resolve, reject) {
 		client.on('ready', () => {
 			console.log(`Logged in as ${client.user.tag}!`);
 		});
 
 		client.on('message', async (msg) => {
+			console.log(msg);
 			if (msg.author.bot) {
 				return;
 			}
@@ -39,7 +39,7 @@ function main(params) {
 
 		setTimeout(function () {
 			resolve({done: true});
-		}, process.env.__OW_DEADLINE - 500);
+		}, 59500);
 	});
 }
 
