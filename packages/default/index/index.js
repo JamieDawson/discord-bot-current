@@ -25,21 +25,23 @@ function main() {
 					.then(function (response) {
 						const value = response.data.body;
 						//console.log(response.data.body);
-						msg.reply(value);
+						msg.reply(
+							value + new Date() + ' ' + process.env.__OW_ACTIVATION_ID
+						);
 					})
 					.catch(function (error) {
 						// handle error
 						console.log(error);
 						msg.reply('screwed up');
 					});
+				return;
 			}
 		});
-
-		client.login(apitoken);
 
 		setTimeout(function () {
 			resolve({done: true});
 		}, 59500);
+		client.login(apitoken);
 	});
 }
 
