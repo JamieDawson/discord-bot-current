@@ -38,4 +38,4 @@ function main() {
 	client.login(process.env.DISCORD_BOT_TOKEN);
 }
 
-module.exports.main = main();
+module.exports.main = main;

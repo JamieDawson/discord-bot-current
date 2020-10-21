@@ -1,1 +1,4 @@
 .env
+.nimbella
+*.zip
+node_modules
