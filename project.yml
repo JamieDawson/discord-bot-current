@@ -1,6 +1,8 @@
 bucket:
   strip: 1
 packages:
-  - name: /hello
-    parameters:
-      apitoken: ${DISCORD_BOT_TOKEN}
+  - name: default
+    actions:
+      - name: hello
+        parameters:
+        apitoken: ${DISCORD_BOT_TOKEN}
