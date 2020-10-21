@@ -5,6 +5,7 @@ const client = new Discord.Client();
 
 function main(params) {
 	let apitoken = params.apitoken;
+
 	return new Promise(function (resolve, reject) {
 		client.on('ready', () => {
 			console.log(`Logged in as ${client.user.tag}!`);

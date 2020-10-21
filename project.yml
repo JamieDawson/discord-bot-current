@@ -3,6 +3,6 @@ bucket:
 packages:
   - name: default
     actions:
-      - name: hello
+      - name: index
         parameters:
-        apitoken: ${DISCORD_BOT_TOKEN}
+          apitoken: ${DISCORD_BOT_TOKEN}
