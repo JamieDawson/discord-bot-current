@@ -1,6 +1,6 @@
 bucket:
   strip: 1
 packages:
-  - name: index
+  - name: /hello
     parameters:
       apitoken: ${DISCORD_BOT_TOKEN}
