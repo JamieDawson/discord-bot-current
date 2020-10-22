@@ -26,7 +26,12 @@ function main() {
 						const value = response.data.body;
 						//console.log(response.data.body);
 						msg.reply(
-							value + new Date() + ' ' + process.env.__OW_ACTIVATION_ID
+							value +
+								msg.author +
+								' 464463test ' +
+								new Date() +
+								' ' +
+								process.env.__OW_ACTIVATION_ID
 						);
 					})
 					.catch(function (error) {
@@ -34,13 +39,13 @@ function main() {
 						console.log(error);
 						msg.reply('screwed up');
 					});
-				return;
 			}
 		});
 
 		setTimeout(function () {
 			resolve({done: true});
 		}, 59500);
+
 		client.login(apitoken);
 	});
 }
